@@ -15,6 +15,10 @@ class Show < ActiveRecord::Base
     def least_popular_show
       order("rating ASC").first
     end
+    
+    def ratings_sum
+      sum('rating')
+    end
   
   end
 end
