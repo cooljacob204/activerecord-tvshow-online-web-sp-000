@@ -21,7 +21,7 @@ class Show < ActiveRecord::Base
     end
     
     def popular_shows
-      when('rating > 5')
+      where('rating > 5')
     end
   
   end
