@@ -24,7 +24,7 @@ class Show < ActiveRecord::Base
       where('rating > 5')
     end
     
-    def show_by_alphabetical_order
+    def shows_by_alphabetical_order
       order('name')
     end
   
