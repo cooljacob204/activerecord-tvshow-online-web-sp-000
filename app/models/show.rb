@@ -9,10 +9,10 @@ class Show < ActiveRecord::Base
     end
     
     def lowest_rating
-      ::least_popular_show.rating
+      least_popular_show.rating
     end
     
-    def ::least_popular_show
+    def least_popular_show
       order("rating ASC").first
     end
   
